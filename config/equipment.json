@@ -1,0 +1,17 @@
+{
+  "sample_period_s": 1.0,
+  "recovery_alpha": 0.25,
+  "baseline_samples": 60,
+  "sensors": {
+    "temperature_c": {"mean": 60.0, "sigma": 0.25, "warning_low": 55.0, "warning_high": 68.0},
+    "pressure_mtorr": {"mean": 10.0, "sigma": 0.15, "warning_low": 8.0, "warning_high": 13.0},
+    "gas_flow_sccm": {"mean": 100.0, "sigma": 0.50, "warning_low": 90.0, "warning_high": 110.0},
+    "rf_power_w": {"mean": 500.0, "sigma": 2.0, "warning_low": 450.0, "warning_high": 550.0},
+    "pump_current_a": {"mean": 3.0, "sigma": 0.04, "warning_low": 2.5, "warning_high": 3.30}
+  },
+  "hard_trip": {"temperature_c": 75.0, "pressure_mtorr": 20.0, "gas_flow_sccm": 80.0, "pump_current_a": 4.0},
+  "safe_recovery": {"temperature_c": 68.0, "pressure_mtorr": 13.0, "pump_current_a": 3.30},
+  "safe_samples_required": 10,
+  "rf_ramp_w_per_s": 100.0,
+  "gas_ramp_sccm_per_s": 20.0
+}

@@ -1,0 +1,9 @@
+{
+  "default_duration_s": 30,
+  "signatures": {
+    "VACUUM_LEAK": {"pressure_mtorr": 0.40, "pump_current_a": 0.005},
+    "COOLING_FAILURE": {"temperature_c": 0.55},
+    "GAS_FLOW_DRIFT": {"gas_flow_sccm": -0.50, "pressure_mtorr": -0.02},
+    "PUMP_DEGRADATION": {"pump_current_a": 0.020, "pressure_mtorr": 0.12}
+  }
+}
